@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdulmajeed Ali | Data Analyst & BI Developer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS Library CSS for Scroll Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .hover-lift {
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .hover-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.15);
+        }
+        .image-zoom {
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .group:hover .image-zoom {
+            transform: scale(1.06);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-indigo-500 selection:text-white overflow-x-hidden">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 w-full bg-white/85 backdrop-blur-md z-50 border-b border-slate-100 transition-all duration-300">
+        <div class="max-w-5xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-xl font-black tracking-tight text-slate-900 hover:text-indigo-600 transition">ABDULMAJEED</a>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-indigo-600 transition duration-200">About</a>
+                <a href="#experience" class="hover:text-indigo-600 transition duration-200">Experience</a>
+                <a href="#skills" class="hover:text-indigo-600 transition duration-200">Superpowers</a>
+                <a href="#certifications" class="hover:text-indigo-600 transition duration-200">Certifications</a>
+                <a href="#process" class="hover:text-indigo-600 transition duration-200">Process</a>
+                <a href="#gallery" class="hover:text-indigo-600 transition duration-200">Portfolio</a>
+                <a href="#contact" class="px-4 py-2 bg-amber-300 text-slate-900 font-semibold rounded-full hover:bg-amber-400 hover:scale-105 transition duration-200">Let's Talk</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-28 pb-16">
+        <div class="max-w-3xl" data-aos="fade-up" data-aos-duration="1000">
+            <!-- الحاوية الخاصة بالنص -->
+         <h1 id="typewriter" class="text-4xl md:text-6xl font-bold"></h1>
+
+        <h1 id="typewriter" class="text-4xl md:text-6xl font-bold border-l-4 border-black pl-1"></h1>
+         <!-- الحاوية الخاصة بالنص -->
+       <h1 id="typewriter" class="text-4xl md:text-6xl font-bold"></h1>
+
+<!-- عنصر عرض كلمة مرحبا مع خاصية رفع المسافة -->
+<h1 id="typewriter" style="margin-bottom: 30px;"></h1>
+
+<script>
+  const text = "مرحبا";
+  const speed = 150; // سرعة الكتابة بالمللي ثانية
+  let i = 0;
+
+  function typeWriter() {
+    if (i < text.length) {
+      document.getElementById("typewriter").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+
+  // بدء التأثير عند تحميل الصفحة
+  window.onload = typeWriter;
+</script>
+    
+            <h2 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6">
+                I'm <span class="bg-amber-200 px-2 py-1 rounded inline-block hover:rotate-2 transition duration-300">Abdulmajed Ali</span>.
+            </h2>
+            <p class="text-lg md:text-xl text-slate-600 leading-relaxed mb-8">
+                I turn complex data into clear, actionable insights and build robust BI solutions that drive smarter decisions.
+            </p>
+            <div class="flex items-center justify-center gap-2 text-sm font-medium text-emerald-600 bg-emerald-50 px-4 py-2 rounded-full w-fit mx-auto mb-8 shadow-sm">
+                <span class="w-2.5 h-2.5 bg-emerald-500 rounded-full animate-pulse"></span>
+                Open to New Opportunities
+            </div>
+            <div class="mb-12">
+                <a href="#contact" class="inline-block px-8 py-4 bg-indigo-600 text-white font-medium rounded-xl shadow-lg shadow-indigo-500/20 hover:bg-indigo-700 hover:scale-105 transition-all duration-300">
+                    Get In Touch
+                </a>
+            </div>
+
+            <div class="w-full max-w-2xl mx-auto rounded-2xl overflow-hidden shadow-2xl border border-slate-200 hover-lift" data-aos="zoom-in" data-aos-delay="200">
+                <img src="watermarked_img_6608909267247584017.png" alt="Data Analyst Workspace" class="w-full h-auto object-cover image-zoom">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-24 bg-white border-y border-slate-100">
+        <div class="max-w-4xl mx-auto px-6" data-aos="fade-up">
+            <h3 class="text-sm uppercase tracking-widest text-indigo-600 font-bold mb-3">About Me</h3>
+            <h2 class="text-3xl font-bold text-slate-900 mb-6">Uncovering insights hidden in data.</h2>
+            <p class="text-lg text-slate-600 leading-relaxed mb-6">
+                I'm a Data Analyst and BI Developer passionate about building intuitive data solutions. I leverage tools like <strong>Tableau</strong>, <strong>Power BI</strong>, <strong>Python</strong>, and <strong>SQL</strong> to transform raw metrics into compelling visual stories and interactive dashboards.
+            </p>
+            <p class="text-lg text-slate-600 leading-relaxed">
+                Whether it's exploring retail trends, designing automated reports, or optimizing analytical workflows, I love solving real-world challenges through data.
+            </p>
+        </div>
+    </section>
+
+    <!-- 1. My Journey So Far (Experience) -->
+    <section id="experience" class="py-24 max-w-5xl mx-auto px-6">
+        <div class="mb-16" data-aos="fade-right">
+            <h2 class="text-4xl font-extrabold tracking-tight text-slate-900 inline-block relative">
+                My journey <span class="bg-amber-300 px-3 py-0.5 rounded-lg text-sm uppercase tracking-wider absolute -top-4 -right-20 rotate-6 shadow-sm">Experience</span>
+            </h2>
+        </div>
+
+        <div class="space-y-16">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start border-b border-slate-200 pb-12 hover-lift p-4 rounded-2xl" data-aos="fade-up">
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900">Data Analyst & BI Developer</h3>
+                    <p class="text-slate-600 font-medium mt-1">Data Projects & Analytics</p>
+                    <p class="text-sm text-slate-400 mt-1">Remote | 2025 – Present</p>
+                </div>
+                <div class="md:col-span-2">
+                    <p class="text-slate-600 leading-relaxed">
+                        Designed and deployed interactive Tableau and Power BI dashboards serving business operations and performance tracking. Translating cross-industry requirements into practical data models, cleaning datasets via Python Pandas, and optimizing database performance using advanced SQL queries.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start border-b border-slate-200 pb-12 hover-lift p-4 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900">Community Contributor</h3>
+                    <p class="text-slate-600 font-medium mt-1">Data Visualization & BI</p>
+                    <p class="text-sm text-slate-400 mt-1">Global Community | 2024 – Present</p>
+                </div>
+                <div class="md:col-span-2">
+                    <p class="text-slate-600 leading-relaxed">
+                        Actively sharing knowledge on data visualization best practices, participating in community challenges, contributing through forums, and helping peers master data storytelling techniques using Tableau and Power BI.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. What's My Superpowers (Skills) -->
+    <section id="skills" class="py-24 bg-white border-y border-slate-100">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-black tracking-tight text-slate-900 mb-16 italic" data-aos="zoom-in">
+                So, what's my superpowers?
+            </h2>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+                <!-- Tableau -->
+                <div class="p-6 bg-slate-50 rounded-3xl border border-slate-100 flex flex-col items-center justify-center hover-lift cursor-pointer group" data-aos="fade-up" data-aos-delay="50">
+                    <div class="w-16 h-16 bg-white rounded-2xl shadow-sm border border-slate-100 flex items-center justify-center mb-3 group-hover:scale-110 transition duration-300 p-2">
+                        <img src="tablue.webp" alt="Tableau" class="w-full h-full object-contain">
+                    </div>
+                    <span class="font-bold text-slate-800">Tableau</span>
+                </div>
+                <!-- Power BI -->
+                <div class="p-6 bg-slate-50 rounded-3xl border border-slate-100 flex flex-col items-center justify-center hover-lift cursor-pointer group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-white rounded-2xl shadow-sm border border-slate-100 flex items-center justify-center mb-3 group-hover:scale-110 transition duration-300 p-2">
+                        <img src="power.jpg" alt="Power BI" class="w-full h-full object-contain">
+                    </div>
+                    <span class="font-bold text-slate-800">Power BI</span>
+                </div>
+                <!-- SQL Server -->
+                <div class="p-6 bg-slate-50 rounded-3xl border border-slate-100 flex flex-col items-center justify-center hover-lift cursor-pointer group" data-aos="fade-up" data-aos-delay="150">
+                    <div class="w-16 h-16 bg-white rounded-2xl shadow-sm border border-slate-100 flex items-center justify-center mb-3 group-hover:scale-110 transition duration-300 p-2">
+                        <img src="sql.png" alt="SQL Server" class="w-full h-full object-contain">
+                    </div>
+                    <span class="font-bold text-slate-800">SQL Server</span>
+                </div>
+                <!-- Pandas -->
+                <div class="p-6 bg-slate-50 rounded-3xl border border-slate-100 flex flex-col items-center justify-center hover-lift cursor-pointer group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-white rounded-2xl shadow-sm border border-slate-100 flex items-center justify-center mb-3 group-hover:scale-110 transition duration-300 p-2">
+                        <img src="pandas.png" alt="Pandas" class="w-full h-full object-contain">
+                    </div>
+                    <span class="font-bold text-slate-800">Pandas</span>
+                </div>
+                <!-- NumPy -->
+                <div class="p-6 bg-slate-50 rounded-3xl border border-slate-100 flex flex-col items-center justify-center hover-lift cursor-pointer group" data-aos="fade-up" data-aos-delay="250">
+                    <div class="w-16 h-16 bg-white rounded-2xl shadow-sm border border-slate-100 flex items-center justify-center mb-3 group-hover:scale-110 transition duration-300 p-2">
+                        <img src="nampay.png" alt="NumPy" class="w-full h-full object-contain">
+                    </div>
+                    <span class="font-bold text-slate-800">NumPy</span>
+                </div>
+                <!-- Excel -->
+                <div class="p-6 bg-slate-50 rounded-3xl border border-slate-100 flex flex-col items-center justify-center hover-lift cursor-pointer group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 bg-white rounded-2xl shadow-sm border border-slate-100 flex items-center justify-center mb-3 group-hover:scale-110 transition duration-300 p-2">
+                        <img src="excel.jpg" alt="Excel" class="w-full h-full object-contain">
+                    </div>
+                    <span class="font-bold text-slate-800">Excel</span>
+                </div>
+                <!-- GitHub -->
+                <div class="p-6 bg-slate-50 rounded-3xl border border-slate-100 flex flex-col items-center justify-center hover-lift cursor-pointer group" data-aos="fade-up" data-aos-delay="350">
+                    <div class="w-16 h-16 bg-white rounded-2xl shadow-sm border border-slate-100 flex items-center justify-center mb-3 group-hover:scale-110 transition duration-300 p-2">
+                        <img src="gethup.png" alt="GitHub" class="w-full h-full object-contain">
+                    </div>
+                    <span class="font-bold text-slate-800">GitHub</span>
+                </div>
+                <!-- Streamlit -->
+                <div class="p-6 bg-slate-50 rounded-3xl border border-slate-100 flex flex-col items-center justify-center hover-lift cursor-pointer group" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-16 h-16 bg-white rounded-2xl shadow-sm border border-slate-100 flex items-center justify-center mb-3 group-hover:scale-110 transition duration-300 p-2">
+                        <img src="streamlite.jpg" alt="Streamlit" class="w-full h-full object-contain">
+                    </div>
+                    <span class="font-bold text-slate-800">Streamlit</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Certifications -->
+    <section id="certifications" class="py-24 max-w-5xl mx-auto px-6">
+        <h2 class="text-4xl md:text-5xl font-black tracking-tight text-slate-900 mb-16 text-center" data-aos="fade-down">
+            Certifications
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm text-center flex flex-col items-center hover-lift" data-aos="fade-up" data-aos-delay="100">
+                <div class="w-24 h-24 bg-gradient-to-b from-indigo-900 to-indigo-700 rounded-2xl flex items-center justify-center text-white text-3xl mb-4 shadow-md rotate-3">🏆</div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Tableau Data Analyst</h3>
+                <p class="text-sm text-slate-500">Certified Professional Credential in Data Visualization & Dashboard Design.</p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm text-center flex flex-col items-center hover-lift" data-aos="fade-up" data-aos-delay="200">
+                <div class="w-24 h-24 bg-gradient-to-b from-amber-600 to-amber-500 rounded-2xl flex items-center justify-center text-white text-3xl mb-4 shadow-md -rotate-3">🏆</div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Power BI Developer</h3>
+                <p class="text-sm text-slate-500">Advanced DAX Modeling, Power Query, and Business Intelligence Reporting.</p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm text-center flex flex-col items-center hover-lift" data-aos="fade-up" data-aos-delay="300">
+                <div class="w-24 h-24 bg-gradient-to-b from-blue-700 to-blue-500 rounded-2xl flex items-center justify-center text-white text-3xl mb-4 shadow-md rotate-2">🏆</div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">SQL & Database Management</h3>
+                <p class="text-sm text-slate-500">Relational Databases, Complex Queries, Stored Procedures, and Optimization.</p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm text-center flex flex-col items-center hover-lift" data-aos="fade-up" data-aos-delay="400">
+                <div class="w-24 h-24 bg-gradient-to-b from-emerald-700 to-emerald-500 rounded-2xl flex items-center justify-center text-white text-3xl mb-4 shadow-md -rotate-2">🏆</div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Python for Data Analysis</h3>
+                <p class="text-sm text-slate-500">Mastery in Pandas dataframes, NumPy arrays, and data cleaning pipelines.</p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm text-center flex flex-col items-center hover-lift" data-aos="fade-up" data-aos-delay="500">
+                <div class="w-24 h-24 bg-gradient-to-b from-green-700 to-green-500 rounded-2xl flex items-center justify-center text-white text-3xl mb-4 shadow-md rotate-1">🏆</div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Advanced Excel Analytics</h3>
+                <p class="text-sm text-slate-500">Pivot Tables, Advanced Formulas, Dashboards, and Data Modeling in Excel.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. How I Solve & Design (Process) -->
+    <section id="process" class="py-24 bg-slate-900 text-white">
+        <div class="max-w-5xl mx-auto px-6 text-center mb-16" data-aos="fade-up">
+            <span class="px-4 py-1.5 bg-indigo-600 text-white text-xs font-bold uppercase tracking-wider rounded-full inline-block mb-4">MY PROCESS</span>
+            <h2 class="text-4xl md:text-5xl font-black tracking-tight">How I Solve & Design</h2>
+        </div>
+
+        <div class="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white text-slate-900 p-8 rounded-3xl shadow-xl hover-lift" data-aos="fade-right">
+                <span class="text-2xl font-black text-indigo-600 mb-2 block">01 - Discover</span>
+                <p class="text-slate-600 leading-relaxed">First, I dive deep to understand what's really happening. I explore user needs, business goals, and challenges to uncover core insights.</p>
+            </div>
+            <div class="bg-white text-slate-900 p-8 rounded-3xl shadow-xl hover-lift" data-aos="fade-left">
+                <span class="text-2xl font-black text-emerald-600 mb-2 block">02 - Define</span>
+                <p class="text-slate-600 leading-relaxed">Next, I clarify objectives by defining key metrics, data needs, and success criteria. I map data flows and ensure alignment with business needs.</p>
+            </div>
+            <div class="bg-white text-slate-900 p-8 rounded-3xl shadow-xl hover-lift" data-aos="fade-right">
+                <span class="text-2xl font-black text-blue-600 mb-2 block">03 - Ideate</span>
+                <p class="text-slate-600 leading-relaxed">I brainstorm possible analytical approaches evaluating different techniques to address business questions effectively.</p>
+            </div>
+            <div class="bg-white text-slate-900 p-8 rounded-3xl shadow-xl hover-lift" data-aos="fade-left">
+                <span class="text-2xl font-black text-amber-600 mb-2 block">04 - Design</span>
+                <p class="text-slate-600 leading-relaxed">This is where insights start to take shape. I design and build ETL workflows, and create dashboards to visualize findings.</p>
+            </div>
+            <div class="bg-white text-slate-900 p-8 rounded-3xl shadow-xl hover-lift" data-aos="fade-right">
+                <span class="text-2xl font-black text-rose-600 mb-2 block">05 - Test & Iterate</span>
+                <p class="text-slate-600 leading-relaxed">I validate data accuracy, gather feedback from users. Iteration ensures usability, performance, and alignment with business needs.</p>
+            </div>
+            <div class="bg-white text-slate-900 p-8 rounded-3xl shadow-xl hover-lift" data-aos="fade-left">
+                <span class="text-2xl font-black text-purple-600 mb-2 block">06 - Build & Refine</span>
+                <p class="text-slate-600 leading-relaxed">I collaborate with cross-functional teams to deploy solutions at scale, ensuring performance and reliability in production.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5 & 6. Here's a taste of what I cook (Gallery) -->
+    <section id="gallery" class="py-24 max-w-6xl mx-auto px-6">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <span class="bg-amber-300 text-slate-900 px-4 py-1.5 rounded-full font-bold text-xs uppercase tracking-widest inline-block mb-3 shadow-sm">VIZ GALLERY</span>
+            <h2 class="text-4xl md:text-5xl font-black tracking-tight text-slate-900">Here's a taste of what I cook</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-4 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-between group hover-lift" data-aos="zoom-in-up" data-aos-delay="100">
+                <div>
+                    <div class="overflow-hidden rounded-2xl mb-4 border border-slate-100">
+                        <img src="Annual_salese_Dashbord.png" alt="Annual Sales Report" class="w-full h-48 object-cover image-zoom">
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-1">Annual Sales Report</h3>
+                    <p class="text-xs text-slate-600 mb-4">Comprehensive revenue, net sales, and regional breakdown dashboard.</p>
+                </div>
+                <a href="https://public.tableau.com/app/profile/abdelmaged.ali/vizzes" target="_blank" class="text-indigo-600 font-semibold text-xs hover:underline">View on Tableau →</a>
+            </div>
+
+            <div class="bg-white p-4 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-between group hover-lift" data-aos="zoom-in-up" data-aos-delay="200">
+                <div>
+                    <div class="overflow-hidden rounded-2xl mb-4 border border-slate-100">
+                        <img src="E_commerce 2021_2025.png" alt="E-commerce Analytics" class="w-full h-48 object-cover image-zoom">
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-1">E-commerce Analytics</h3>
+                    <p class="text-xs text-slate-600 mb-4">Global sales tracking, profit margins, and customer segmentation.</p>
+                </div>
+                <a href="https://public.tableau.com/app/profile/abdelmaged.ali/vizzes" target="_blank" class="text-indigo-600 font-semibold text-xs hover:underline">View on Tableau →</a>
+            </div>
+
+            <div class="bg-white p-4 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-between group hover-lift" data-aos="zoom-in-up" data-aos-delay="300">
+                <div>
+                    <div class="overflow-hidden rounded-2xl mb-4 border border-slate-100">
+                        <img src="Finance_banking_transaction.png" alt="Finance Banking Transactions" class="w-full h-48 object-cover image-zoom">
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-1">Banking Transactions & Risk</h3>
+                    <p class="text-xs text-slate-600 mb-4">Fraud detection, AML check status, and transaction risk tracking.</p>
+                </div>
+                <a href="https://public.tableau.com/app/profile/abdelmaged.ali/vizzes" target="_blank" class="text-indigo-600 font-semibold text-xs hover:underline">View on Tableau →</a>
+            </div>
+
+            <div class="bg-white p-4 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-between group hover-lift" data-aos="zoom-in-up" data-aos-delay="400">
+                <div>
+                    <div class="overflow-hidden rounded-2xl mb-4 border border-slate-100">
+                        <img src="folireda_company.png" alt="Florida Company Analytics" class="w-full h-48 object-cover image-zoom">
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-1">Automotive Sales Department</h3>
+                    <p class="text-xs text-slate-600 mb-4">Vehicle models performance, mpg efficiency, and pricing analytics.</p>
+                </div>
+                <a href="https://public.tableau.com/app/profile/abdelmaged.ali/vizzes" target="_blank" class="text-indigo-600 font-semibold text-xs hover:underline">View on Tableau →</a>
+            </div>
+
+            <div class="bg-white p-4 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-between group hover-lift" data-aos="zoom-in-up" data-aos-delay="500">
+                <div>
+                    <div class="overflow-hidden rounded-2xl mb-4 border border-slate-100">
+                        <img src="kalinga 1.png" alt="Kalinga University" class="w-full h-48 object-cover image-zoom">
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-1">University Student Analytics</h3>
+                    <p class="text-xs text-slate-600 mb-4">Faculty success rates, demographic distributions, and geographic mapping.</p>
+                </div>
+                <a href="https://public.tableau.com/app/profile/abdelmaged.ali/vizzes" target="_blank" class="text-indigo-600 font-semibold text-xs hover:underline">View on Tableau →</a>
+            </div>
+
+            <div class="bg-white p-4 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-between group hover-lift" data-aos="zoom-in-up" data-aos-delay="600">
+                <div>
+                    <div class="overflow-hidden rounded-2xl mb-4 border border-slate-100">
+                        <img src="Sales Data Analysis for larg Store.png" alt="Large Store Retail Analysis" class="w-full h-48 object-cover image-zoom">
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-1">Large-Scale Retail Store</h3>
+                    <p class="text-xs text-slate-600 mb-4">Detailed profit, quantity, and regional category performance analysis.</p>
+                </div>
+                <a href="https://public.tableau.com/app/profile/abdelmaged.ali/vizzes" target="_blank" class="text-indigo-600 font-semibold text-xs hover:underline">View on Tableau →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Reading List -->
+    <section class="py-24 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-5xl mx-auto px-6 text-center mb-16" data-aos="fade-up">
+            <h2 class="text-4xl font-black tracking-tight text-slate-900 mb-4">Reading List</h2>
+            <p class="text-slate-600 max-w-xl mx-auto">Reading more is one of my biggest goals. This list shifts and grows as new titles find their way into my hands.</p>
+        </div>
+
+        <div class="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm text-center hover-lift" data-aos="fade-up" data-aos-delay="100">
+                <div class="h-48 bg-amber-50 rounded-2xl flex items-center justify-center overflow-hidden mb-4">
+                <img src="big book.jpg" alt="How Charts Lie" class="w-full h-full object-cover" />
+                  </div>
+                <h3 class="font-bold text-slate-900">The Big Book of Dashboards</h3>
+            </div>
+            <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm text-center hover-lift" data-aos="fade-up" data-aos-delay="200">
+                <div class="h-48 bg-amber-50 rounded-2xl flex items-center justify-center overflow-hidden mb-4">
+                <img src="bookstory.jpg" alt="How Charts Lie" class="w-full h-full object-cover" />
+                  </div>
+                <h3 class="font-bold text-slate-900">Storytelling with Data</h3>
+            </div>
+            <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm text-center hover-lift" data-aos="fade-up" data-aos-delay="300">
+                <div class="h-48 bg-amber-50 rounded-2xl flex items-center justify-center overflow-hidden mb-4">
+                <img src="boochart.jpg" alt="How Charts Lie" class="w-full h-full object-cover" />
+                    </div>
+                <h3 class="font-bold text-slate-900">How Charts Lie</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Life outside Data & Pixels -->
+    <section class="py-24 bg-slate-900 text-white">
+        <div class="max-w-5xl mx-auto px-6 text-center mb-16" data-aos="fade-up">
+            <h2 class="text-4xl font-black tracking-tight mb-2">Life outside Data & Pixels...</h2>
+            <p class="text-slate-400">Well, that's my story, what's yours?</p>
+        </div>
+
+        <div class="max-w-5xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="rounded-2xl overflow-hidden shadow-lg border border-slate-700 bg-slate-800 p-2 rotate-1 hover:rotate-0 transition duration-300 hover-lift" data-aos="zoom-in" data-aos-delay="100">
+                <img src="watermarked_img_6608909267247584017.png" alt="Life 1" class="rounded-xl w-full h-40 object-cover image-zoom">
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-lg border border-slate-700 bg-slate-800 p-2 -rotate-2 hover:rotate-0 transition duration-300 hover-lift" data-aos="zoom-in" data-aos-delay="200">
+                <img src="watermarked_img_898783392784406942.png" alt="Life 2" class="rounded-xl w-full h-40 object-cover image-zoom">
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-lg border border-slate-700 bg-slate-800 p-2 -rotate-2 hover:rotate-0 transition duration-300 hover-lift" data-aos="zoom-in" data-aos-delay="200">
+                <img src="watermarked_img_9802915868175377800.png" alt="Life 2" class="rounded-xl w-full h-40 object-cover image-zoom">
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-lg border border-slate-700 bg-slate-800 p-2 rotate-2 hover:rotate-0 transition duration-300 hover-lift" data-aos="zoom-in" data-aos-delay="300">
+                <img src="IMG-20250610-WA0040.jpg" alt="Life 3" class="rounded-xl w-full h-40 object-cover image-zoom">
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-lg border border-slate-700 bg-slate-800 p-2 -rotate-1 hover:rotate-0 transition duration-300 hover-lift" data-aos="zoom-in" data-aos-delay="400">
+                <img src="IMG-20261011-WA0044.jpg" alt="Life 4" class="rounded-xl w-full h-40 object-cover image-zoom">
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Footer & Socials (محدث بالصور الفعلية للروابط كما طلبت) -->
+    <footer id="contact" class="py-24 bg-white text-center border-t border-slate-200">
+        <div class="max-w-3xl mx-auto px-6" data-aos="fade-up">
+            <h2 class="text-5xl font-black tracking-tight text-slate-900 mb-12">ABDULMAJED ALI</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left max-w-lg mx-auto mb-16">
+                <div>
+                    <h4 class="text-xs uppercase tracking-widest text-slate-400 font-bold mb-4">FIND ME ON</h4>
+                    <ul class="space-y-4 font-semibold text-slate-700">
+                        <li>
+                            <a href="mailto:mlhsab822@gmail.com" class="flex items-center gap-3 hover:text-indigo-600 transition">
+                              <img src="email.jpg" alt="Email" class="w-6 h-6 object-contain rounded"> Email
+                             </a>
+                        </li>
+                        <li>
+                            <a href="https://public.tableau.com/app/profile/abdelmaged.ali/vizzes" target="_blank" class="flex items-center gap-3 hover:text-indigo-600 transition">
+                                <img src="tablue.webp" alt="Tableau Public" class="w-6 h-6 object-contain rounded"> Tableau Public
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs uppercase tracking-widest text-slate-400 font-bold mb-4">RESOURCES</h4>
+                    <ul class="space-y-4 font-semibold text-slate-700">
+                        <li>
+                            <a href="https://github.com/mlhsab822?tab=repositories" target="_blank" class="flex items-center gap-3 hover:text-indigo-600 transition">
+                                <img src="gethup.png" alt="GitHub" class="w-6 h-6 object-contain rounded"> GitHub
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center gap-3 hover:text-indigo-600 transition">
+                                <img src="wep.png" alt="Resume" class="w-6 h-6 object-contain rounded"> Resume
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="text-sm text-slate-500">© 2026 Made with ❤️ by Abdulmajed Ali</p>
+        </div>
+    </footer>
+
+    <!-- زر العودة إلى الأعلى التفاعلي -->
+    <button id="backToTop" class="fixed bottom-6 right-6 w-12 h-12 bg-indigo-600 text-white rounded-full shadow-lg flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 hover:bg-indigo-700 hover:scale-110 z-50">
+        ↑
+    </button>
+
+    <!-- AOS JavaScript Library Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        const backToTopButton = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 400) {
+                backToTopButton.classList.remove('opacity-0', 'pointer-events-none');
+            } else {
+                backToTopButton.classList.add('opacity-0', 'pointer-events-none');
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+</body>
+</html>
